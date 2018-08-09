@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="479f07a6-d0b3-4417-a6f3-5af1c4a28ce7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/codingfundas/datastructure/tree/NumberOfIslands.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataStructures.iml" afterPath="$PROJECT_DIR$/DataStructures.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/codingfundas/datastructure/tree/NumberOfIslands.java" afterPath="$PROJECT_DIR$/src/com/codingfundas/datastructure/tree/NumberOfIslands.java" />
     </list>
     <ignored path="DataStructures.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +53,8 @@
       <file leaf-file-name="NumberOfIslands.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/codingfundas/datastructure/tree/NumberOfIslands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9565217">
-              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.19848771">
+              <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -673,12 +671,12 @@
       <created>1533723364912</created>
       <option name="number" value="Default" />
       <updated>1533723364912</updated>
-      <workItem from="1533723366001" duration="9249000" />
+      <workItem from="1533723366001" duration="9570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9249000" />
+    <option name="totallyTimeSpent" value="9570000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -728,13 +726,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/codingfundas/datastructure/tree/NumberOfIslands.java</url>
-          <line>38</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/codingfundas/datastructure/tree/NumberOfIslands.java</url>
-          <line>27</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -795,8 +793,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/codingfundas/datastructure/tree/NumberOfIslands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9565217">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.19848771">
+          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
           <folding />
         </state>
       </provider>

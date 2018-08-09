@@ -2,6 +2,12 @@ package com.codingfundas.datastructure.tree;
 
 /**
  * Created by sunngupt on 8/8/18.
+ *
+ * https://leetcode.com/problems/number-of-islands/
+ *
+ * https://github.com/NeverDoubtTheWorm/Pramp/tree/master/Island_Count
+ *
+ *
  */
 public class NumberOfIslands {
 
@@ -11,8 +17,14 @@ public class NumberOfIslands {
                 {'0', '0', '1', '0', '0'},
                 {'1', '1', '1', '0', '1'}};
 
+        char[][] grid1 = {{'0',  '1',  '0',  '1',  '0'},
+                {'0',  '0',  '1',  '1',  '1'},
+                {'1',  '0',  '0',  '1',  '0'},
+                {'0' , '1' , '1',  '0',  '0'},
+                {'1',  '0',  '1',  '0',  '1'}};
+
         NumberOfIslands numberOfIslands = new NumberOfIslands();
-        System.out.print("Total Number of islands " + numberOfIslands.numIslands(grid));
+        System.out.print("Total Number of islands " + numberOfIslands.numIslands(grid1));
 
     }
 
