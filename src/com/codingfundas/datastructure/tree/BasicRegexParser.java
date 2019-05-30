@@ -1,7 +1,7 @@
 package com.codingfundas.datastructure.tree;
 
-import java.io.*;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by sunngupt on 8/12/18.
