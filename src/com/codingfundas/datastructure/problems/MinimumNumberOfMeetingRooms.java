@@ -14,7 +14,6 @@ public class MinimumNumberOfMeetingRooms {
     int j = 0;
 
     int minMeetingRoomsRequired = 1;
-
     int noOfOngoingMeetings = 1;
 
     while (i < l && j < l) {
