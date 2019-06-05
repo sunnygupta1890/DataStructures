@@ -1,27 +1,26 @@
 package com.codingfundas.datastructure.problems;
 
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Map;
-import java.util.Queue;
+import java.util.TreeSet;
 
 public class BallonProblem {
 
   // Assuming heightArr contains non-negative numbers
   public static int numberOfRequiredArrows(int[] heightArr) {
 
-    Map<Integer, Queue<Integer>> map = new HashMap<>();
+    Map<Integer, TreeSet<Integer>> map = new HashMap<>();
 
     // populate the map with height as key and list of indexes as value
-    Queue<Integer> indexList = null;
+    TreeSet<Integer> setIndex = null;
     for (int i = 0; i < heightArr.length; i++) {
       if (map.containsKey(heightArr[i])) {
-        indexList = map.get(heightArr[i]);
+        setIndex = map.get(heightArr[i]);
       } else {
-        indexList = new LinkedList<>();
-        map.put(heightArr[i], indexList);
+        setIndex = new TreeSet<>();
+        map.put(heightArr[i], setIndex);
       }
-      indexList.add(i);
+      setIndex.add(i);
     }
 
     int numberOfRequiredArrows = 0;
@@ -33,18 +32,28 @@ public class BallonProblem {
 
       numberOfRequiredArrows++;
       int nextHeight = numberFound;
+      int prevIndex = -1;
       while (map.containsKey(nextHeight) && nextHeight >= 0) {
 
-        Queue<Integer> queue = map.get(nextHeight);
-        Integer index = queue.poll();
+        TreeSet<Integer> indexSet = map.get(nextHeight);
+        Integer index = indexSet.ceiling(prevIndex);
+        // If you don't find an index greater than the previous Index,
+        // then you should break e.g. in case of 6,4,5, when you are at index 2, you need a balloon
+        // of height 4 with index greater than 2, but you didn't find it
+        if (index == null) {
+          break;
+        } else {
+          prevIndex = index;
+          indexSet.remove(index);
+          if (indexSet.size() == 0) {
+            map.remove(heightArr[index]);
+          }
+          if (index != null) {
+            heightArr[index] = -1;
+          }
+          nextHeight--;
+        }
 
-        if (queue.size() == 0) {
-          map.remove(heightArr[index]);
-        }
-        if (index != null) {
-          heightArr[index] = -1;
-        }
-        nextHeight--;
       }
     }
 
@@ -52,7 +61,7 @@ public class BallonProblem {
   }
 
   public static void main(String[] args) {
-    int[] heightArr = {4, 5, 4, 3, 4};
+    int[] heightArr = {4,3,6,3};
     System.out.println(numberOfRequiredArrows(heightArr));
   }
 
