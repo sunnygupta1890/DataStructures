@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class BallonProblem {
 
-  // Assuming heightArr contains non-negative numbers
+  // Assuming heightArr contains non-negative numbers.
   public static int numberOfRequiredArrows(int[] heightArr) {
 
     Map<Integer, TreeSet<Integer>> map = new HashMap<>();
