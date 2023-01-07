@@ -113,9 +113,9 @@ public class MinimumPathFromRootTillLeaf {
     n7.add(n5);
     n7.add(n6);
     
-    List<Node> finalList = new ArrayList<>();
+    List<Node> finalList = new ArrayList<Node>();
     
-    minimumPathSum(n7, 0, new MinVal(), 0, new ArrayList<>(), finalList);
+    minimumPathSum(n7, 0, new MinVal(), 0, new ArrayList<Node>(), finalList);
     
     for(Node n: finalList) {
       System.out.println(n.value);
