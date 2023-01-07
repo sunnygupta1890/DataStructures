@@ -9,7 +9,7 @@ public class BallonProblem {
   // Assuming heightArr contains non-negative numbers.
   public static int numberOfRequiredArrows(int[] heightArr) {
 
-    Map<Integer, TreeSet<Integer>> map = new HashMap<>();
+    Map<Integer, TreeSet<Integer>> map = new HashMap<Integer, TreeSet<Integer>>();
 
     // populate the map with height as key and list of indexes as value
     TreeSet<Integer> setIndex = null;
@@ -17,7 +17,7 @@ public class BallonProblem {
       if (map.containsKey(heightArr[i])) {
         setIndex = map.get(heightArr[i]);
       } else {
-        setIndex = new TreeSet<>();
+        setIndex = new TreeSet<Integer>();
         map.put(heightArr[i], setIndex);
       }
       setIndex.add(i);
